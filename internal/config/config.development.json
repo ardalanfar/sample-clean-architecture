@@ -1,0 +1,23 @@
+{
+    "Fara_plus":{
+
+    },
+
+    "Logger": {
+          "Level": "debug",
+          "LogDirectory": "logApp.log"
+    },
+    
+    "PostgreSQL":{
+          "Username": "postgres",
+          "Password": "postgres",
+          "Dbname":   "farashop",
+          "Host":     "localhost",
+          "Port":     "5432"
+    },
+
+    "Email":{
+
+    }
+
+}

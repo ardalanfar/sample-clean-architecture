@@ -1,0 +1,20 @@
+# docker compose -f docker-compose-infra.yaml up -d
+
+version: '3.3'
+services:
+  Postgres:
+    container_name: postgres_farashop
+    image: postgres:latest
+    volumes:
+      - db:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+
+volumes:
+  db:
+    driver: local
+
